@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get update
-RUN apt-get update && apt-get install -y git
+RUN apt-get install -y git
 RUN apt-get install g++ -y
 RUN apt install cmake -y
 RUN apt-get install libboost-all-dev -y

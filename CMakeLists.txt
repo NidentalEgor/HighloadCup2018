@@ -24,16 +24,10 @@ include(CMakeToolsHelpers OPTIONAL)
 add_executable(Server ${CMAKE_CURRENT_SOURCE_DIR}/Main.cpp)
 
 add_subdirectory(External)
-# add_subdirectory(DataStorage)
-# add_subdirectory(Tests)
-# add_subdirectory(HttpParser)
 add_subdirectory(HttpServer)
 add_subdirectory(Utils)
 
 TARGET_LINK_LIBRARIES(Server
-#   DataStorage
-#   HttpParser
   HttpServer
   Traceable
-  ${BOOST_LIBS}
-)
+  ${BOOST_LIBS})
