@@ -1,0 +1,4 @@
+Build/*
+Scripts/*
+!Build/build.sh
+.vscode

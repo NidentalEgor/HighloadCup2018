@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Additional folders and files
+Build/*
+!Build/build.sh
+Scripts/docker_build_and_push.sh
+.vscode/*
